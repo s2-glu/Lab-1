@@ -1,0 +1,348 @@
+IQ-TREE 2.3.6 built Aug  1 2024
+
+Input file name: /home/bio312-user/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.fas
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 807233
+
+REFERENCES
+----------
+
+To cite IQ-TREE please use:
+
+Bui Quang Minh, Heiko A. Schmidt, Olga Chernomor, Dominik Schrempf,
+Michael D. Woodhams, Arndt von Haeseler, and Robert Lanfear (2020)
+IQ-TREE 2: New models and efficient methods for phylogenetic inference
+in the genomic era. Mol. Biol. Evol., in press.
+https://doi.org/10.1093/molbev/msaa015
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2018) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol. Biol. Evol., 35:518–522.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 24 sequences with 1323 amino-acid sites
+Number of constant sites: 422 (= 31.8972% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 422 (= 31.8972% of all sites)
+Number of parsimony informative sites: 868
+Number of distinct site patterns: 751
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: Q.plant+I+R2
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+Q.plant+I+R2     -10374.356   20844.712 - 2.33e-07   20848.404 - 1.39e-06   21093.720 +        1
+Q.plant+R2       -10390.645   20875.290 - 5.35e-14   20878.829 - 3.44e-13   21119.110 - 3.07e-06
+Q.insect+I+R2    -10400.258   20896.516 - 1.32e-18   20900.208 - 7.83e-18   21145.523 - 5.64e-12
+Q.insect+R2      -10408.994   20911.988 - 5.75e-22   20915.527 - 3.69e-21   21155.808 - 3.29e-14
+Q.insect+F+I+R2  -10340.396   20814.791 +    0.733   20822.052 +    0.733   21162.364 - 1.24e-15
+Q.plant+F+I+R2   -10341.413   20816.827 +    0.265   20824.088 +    0.265   21164.400 - 4.49e-16
+JTT+I+R2         -10410.427   20916.854 - 5.04e-23   20920.546 -    3e-22   21165.861 - 2.16e-16
+JTT+R2           -10415.082   20924.165 -  1.3e-24   20927.704 - 8.38e-24   21167.985 - 7.47e-17
+Q.insect+F+R2    -10347.589   20827.179 -   0.0015   20834.220 -  0.00167   21169.564 - 3.39e-17
+JTTDCMut+I+R2    -10412.693   20921.387 - 5.23e-24   20925.079 - 3.11e-23   21170.394 - 2.24e-17
+JTTDCMut+R2      -10417.281   20928.562 - 1.45e-25   20932.101 -  9.3e-25   21172.382 - 8.29e-18
+LG+I+R2          -10419.582   20935.163 - 5.33e-27   20938.855 - 3.17e-26   21184.171 - 2.28e-20
+Q.plant+F+R2     -10355.622   20843.244 - 4.86e-07   20850.285 - 5.43e-07   21185.629 -  1.1e-20
+LG+R2            -10425.962   20945.924 - 2.46e-29   20949.463 - 1.58e-28   21189.744 - 1.41e-21
+LG+R3            -10423.147   20944.295 - 5.55e-29   20948.144 - 3.05e-28   21198.490 - 1.78e-23
+LG+I+R3          -10419.628   20939.257 - 6.89e-28   20943.266 -  3.5e-27   21198.639 - 1.65e-23
+Q.pfam+I+R2      -10428.241   20952.482 - 9.25e-31   20956.174 - 5.51e-30   21201.489 - 3.96e-24
+Q.pfam+R2        -10433.475   20960.949 - 1.34e-32   20964.488 - 8.62e-32   21204.769 - 7.69e-25
+Q.yeast+F+I+R2   -10364.546   20863.091 - 2.38e-11   20870.352 - 2.38e-11   21210.664 - 4.03e-26
+Q.yeast+F+R2     -10371.778   20875.557 - 4.68e-14   20882.598 - 5.22e-14   21217.942 - 1.06e-27
+LG+F+I+R2        -10376.219   20886.438 - 2.03e-16   20893.699 - 2.03e-16   21234.011 - 3.44e-31
+Q.mammal+I+R2    -10445.496   20986.992 - 2.97e-38   20990.684 - 1.77e-37   21235.999 - 1.27e-31
+LG+F+R2          -10381.926   20895.851 - 1.83e-18   20902.893 - 2.05e-18   21238.237 - 4.15e-32
+JTT+F+I+R2       -10379.385   20892.771 - 8.56e-18   20900.031 - 8.56e-18   21240.344 - 1.45e-32
+JTT+F+R2         -10383.832   20899.663 - 2.73e-19   20906.705 - 3.04e-19   21242.049 - 6.18e-33
+JTTDCMut+F+I+R2  -10381.150   20896.299 - 1.47e-18   20903.560 - 1.47e-18   21243.872 - 2.48e-33
+Q.yeast+I+R2     -10450.016   20996.033 - 3.23e-40   20999.725 - 1.92e-39   21245.041 - 1.38e-33
+JTTDCMut+F+R2    -10385.537   20903.075 - 4.95e-20   20910.116 - 5.53e-20   21245.460 - 1.12e-33
+Q.pfam+F+I+R2    -10384.445   20902.891 - 5.43e-20   20910.152 - 5.43e-20   21250.464 - 9.19e-35
+Q.pfam+F+R2      -10389.316   20910.633 - 1.13e-21   20917.674 - 1.26e-21   21253.018 - 2.56e-35
+Q.mammal+R2      -10458.699   21011.397 - 1.49e-43   21014.936 - 9.57e-43   21255.217 - 8.54e-36
+Q.yeast+R2       -10459.758   21013.516 - 5.16e-44   21017.055 - 3.32e-43   21257.336 - 2.96e-36
+Q.bird+I+R2      -10456.475   21008.951 - 5.06e-43   21012.643 - 3.01e-42   21257.959 - 2.17e-36
+LG+G4            -10468.664   21029.327 -  1.9e-47   21032.716 - 1.32e-46   21267.960 - 1.46e-38
+LG+I+G4          -10469.868   21033.736 -  2.1e-48   21037.274 - 1.35e-47   21277.555 -  1.2e-40
+Q.bird+R2        -10475.505   21045.009 - 7.48e-51   21048.548 - 4.81e-50   21288.829 - 4.29e-43
+WAG+R2           -10476.393   21046.786 - 3.08e-51   21050.325 - 1.98e-50   21290.606 - 1.76e-43
+Q.mammal+F+I+R2  -10404.976   20943.953 - 6.58e-29   20951.213 - 6.58e-29   21291.526 - 1.11e-43
+VT+R2            -10478.310   21050.620 - 4.53e-52   21054.158 - 2.91e-51   21294.440 -  2.6e-44
+WAG+I+R2         -10474.781   21045.562 - 5.68e-51   21049.254 - 3.38e-50   21294.570 - 2.43e-44
+mtInv+F+I+R2     -10407.422   20948.844 -  5.7e-30   20956.105 -  5.7e-30   21296.417 - 9.66e-45
+VT+I+R2          -10478.562   21053.124 - 1.29e-52   21056.816 - 7.71e-52   21302.131 - 5.55e-46
+mtZOA+F+I+R2     -10411.019   20956.037 - 1.56e-31   20963.298 - 1.56e-31   21303.610 - 2.65e-46
+Q.mammal+F+R2    -10417.993   20967.986 - 3.98e-34   20975.028 - 4.44e-34   21310.372 - 9.01e-48
+mtInv+F+R2       -10418.518   20969.035 - 2.35e-34   20976.077 - 2.63e-34   21311.421 - 5.33e-48
+mtMet+F+I+R2     -10419.823   20973.645 - 2.35e-35   20980.906 - 2.35e-35   21321.218 - 3.97e-50
+Dayhoff+F+I+R2   -10421.414   20976.828 - 4.78e-36   20984.089 - 4.78e-36   21324.401 - 8.09e-51
+DCMut+F+I+R2     -10422.085   20978.171 - 2.44e-36   20985.431 - 2.44e-36   21325.744 - 4.14e-51
+Dayhoff+F+R2     -10427.678   20987.356 - 2.47e-38   20994.398 - 2.76e-38   21329.742 -  5.6e-52
+Q.bird+F+I+R2    -10424.676   20983.352 - 1.83e-37   20990.613 - 1.83e-37   21330.925 -  3.1e-52
+DCMut+F+R2       -10428.283   20988.566 - 1.35e-38   20995.607 - 1.51e-38   21330.951 - 3.06e-52
+WAG+F+R2         -10432.881   20997.762 - 1.36e-40   21004.804 - 1.52e-40   21340.147 - 3.08e-54
+mtZOA+F+R2       -10433.339   20998.679 -  8.6e-41   21005.720 -  9.6e-41   21341.064 - 1.95e-54
+rtREV+F+I+R2     -10430.306   20994.612 - 6.57e-40   21001.873 - 6.57e-40   21342.186 - 1.11e-54
+WAG+F+I+R2       -10431.130   20996.260 - 2.88e-40   21003.520 - 2.88e-40   21343.833 - 4.88e-55
+rtREV+F+R2       -10435.432   21002.864 - 1.06e-41   21009.905 - 1.18e-41   21345.249 -  2.4e-55
+mtMet+F+R2       -10435.708   21003.416 - 8.06e-42   21010.457 - 8.99e-42   21345.801 - 1.82e-55
+Q.bird+F+R2      -10443.253   21018.505 - 4.26e-45   21025.547 - 4.75e-45   21360.891 - 9.65e-59
+VT+F+R2          -10447.889   21027.778 - 4.13e-47   21034.820 - 4.61e-47   21370.164 - 9.35e-61
+mtREV+F+I+R2     -10446.934   21027.867 - 3.95e-47   21035.128 - 3.95e-47   21375.440 - 6.69e-62
+Dayhoff+I+R2     -10515.691   21127.383 -  9.7e-69   21131.075 - 5.78e-68   21376.390 - 4.16e-62
+DCMut+I+R2       -10516.354   21128.709 -    5e-69   21132.401 - 2.98e-68   21377.716 - 2.14e-62
+VT+F+I+R2        -10448.306   21030.613 -    1e-47   21037.873 -    1e-47   21378.186 - 1.69e-62
+Dayhoff+R2       -10521.697   21137.395 -  6.5e-71   21140.934 - 4.18e-70   21381.215 - 3.73e-63
+DCMut+R2         -10522.287   21138.575 -  3.6e-71   21142.114 - 2.32e-70   21382.395 - 2.07e-63
+HIVb+F+I+R2      -10450.820   21035.640 -  8.1e-49   21042.900 -  8.1e-49   21383.213 - 1.37e-63
+LG+I             -10527.094   21146.188 -    8e-73   21149.577 - 5.55e-72   21384.821 - 6.14e-64
+mtREV+F+R2       -10462.605   21057.211 - 1.68e-53   21064.252 - 1.87e-53   21399.596 -  3.8e-67
+HIVb+F+R2        -10465.040   21062.080 - 1.47e-54   21069.122 - 1.64e-54   21404.466 - 3.33e-68
+cpREV+I+R2       -10533.411   21162.822 - 1.96e-76   21166.514 - 1.16e-75   21411.830 - 8.38e-70
+cpREV+R2         -10538.379   21170.759 -  3.7e-78   21174.297 - 2.38e-77   21414.578 - 2.12e-70
+mtART+F+I+R2     -10467.382   21068.765 -  5.2e-56   21076.025 -  5.2e-56   21416.338 -  8.8e-71
+HIVb+I+R2        -10536.712   21169.425 - 7.21e-78   21173.117 - 4.29e-77   21418.432 - 3.09e-71
+cpREV+F+I+R2     -10472.973   21079.946 - 1.94e-58   21087.206 - 1.94e-58   21427.519 - 3.28e-73
+cpREV+F+R2       -10478.033   21088.065 - 3.35e-60   21095.107 - 3.73e-60   21430.451 - 7.58e-74
+LG               -10555.191   21200.381 - 1.37e-84   21203.623 - 1.02e-83   21433.826 -  1.4e-74
+rtREV+I+R2       -10547.539   21191.079 - 1.43e-82   21194.771 - 8.52e-82   21440.086 - 6.13e-76
+HIVb+R2          -10551.642   21197.285 - 6.43e-84   21200.823 - 4.13e-83   21441.104 - 3.68e-76
+mtVer+F+I+R2     -10480.479   21094.958 - 1.07e-61   21102.218 - 1.07e-61   21442.531 - 1.81e-76
+rtREV+R2         -10553.191   21200.382 - 1.37e-84   21203.921 - 8.78e-84   21444.202 - 7.83e-77
+FLU+F+I+R2       -10482.721   21099.442 - 1.13e-62   21106.703 - 1.13e-62   21447.015 - 1.92e-77
+Blosum62+R2      -10557.229   21208.458 - 2.41e-86   21211.996 - 1.55e-85   21452.277 - 1.38e-78
+PMB+R2           -10557.451   21208.903 - 1.93e-86   21212.442 - 1.24e-85   21452.723 - 1.11e-78
+Blosum62+I+R2    -10557.106   21210.212 -    1e-86   21213.905 - 5.96e-86   21459.220 - 4.29e-80
+PMB+I+R2         -10558.087   21212.175 - 3.76e-87   21215.867 - 2.24e-86   21461.182 - 1.61e-80
+FLU+F+R2         -10494.642   21121.283 - 2.05e-67   21128.325 - 2.29e-67   21463.669 - 4.64e-81
+mtART+F+R2       -10496.115   21124.229 -  4.7e-68   21131.271 - 5.24e-68   21466.615 - 1.06e-81
+FLU+I+R2         -10564.660   21225.319 - 5.25e-90   21229.011 - 3.13e-89   21474.327 - 2.25e-83
+mtMAM+F+I+R2     -10496.611   21127.222 - 1.05e-68   21134.482 - 1.05e-68   21474.795 - 1.78e-83
+mtVer+F+R2       -10505.495   21142.990 - 3.96e-72   21150.031 - 4.42e-72   21485.375 - 8.98e-86
+FLU+R2           -10576.715   21247.430 -  8.3e-95   21250.969 - 5.33e-94   21491.250 - 4.76e-87
+FLAVI+F+I+R2     -10508.861   21151.722 - 5.03e-74   21158.983 - 5.03e-74   21499.296 - 8.52e-89
+Blosum62+F+R2    -10520.079   21172.157 - 1.84e-78   21179.199 - 2.05e-78   21514.542 - 4.16e-92
+Blosum62+F+I+R2  -10519.994   21173.988 - 7.36e-79   21181.249 - 7.36e-79   21521.561 - 1.25e-93
+PMB+F+R2         -10525.472   21182.945 - 8.35e-81   21189.986 - 9.32e-81   21525.330 - 1.89e-94
+mtMAM+F+R2       -10526.465   21184.929 -  3.1e-81   21191.971 - 3.45e-81   21527.315 - 7.02e-95
+PMB+F+I+R2       -10525.912   21185.825 - 1.98e-81   21193.085 - 1.98e-81   21533.398 - 3.35e-96
+FLAVI+F+R2       -10533.187   21198.375 - 3.73e-84   21205.416 - 4.16e-84   21540.760 - 8.44e-98
+FLAVI+I+R2       -10601.145   21298.290 - 7.5e-106   21301.982 - 4.46e-105   21547.297 - 3.21e-99
+FLAVI+R2         -10625.573   21345.145 - 5.02e-116   21348.684 - 3.22e-115   21588.965 - 2.88e-108
+mtZOA+I+R2       -10744.730   21585.459 - 3.29e-168   21589.151 - 1.96e-167   21834.467 - 1.41e-161
+HIVw+F+I+R2      -10695.415   21524.830 - 4.81e-155   21532.091 - 4.81e-155   21872.403 - 8.15e-170
+mtZOA+R2         -10775.725   21645.450 - 3.09e-181   21648.989 - 1.99e-180   21889.270 - 1.77e-173
+HIVw+F+R2        -10720.815   21573.630 - 1.22e-165   21580.671 - 1.36e-165   21916.015 - 2.76e-179
+mtMet+I+R2       -10869.863   21835.727 - 1.49e-222   21839.419 - 8.85e-222   22084.734 - 6.37e-216
+mtREV+I+R2       -10879.330   21854.659 - 1.15e-226   21858.352 - 6.85e-226   22103.667 - 4.93e-220
+mtART+I+R2       -10887.029   21870.058 - 5.21e-230   21873.750 - 3.1e-229   22119.066 - 2.23e-223
+mtMet+R2         -10891.723   21877.447 - 1.3e-231   21880.986 - 8.33e-231   22121.267 - 7.43e-224
+mtREV+R2         -10899.664   21893.328 - 4.61e-235   21896.867 - 2.97e-234   22137.148 - 2.64e-227
+HIVw+I+R2        -10907.518   21911.036 - 6.59e-239   21914.728 - 3.92e-238   22160.043 - 2.82e-232
+mtART+R2         -10924.659   21943.318 - 6.44e-246   21946.857 - 4.14e-245   22187.138 - 3.69e-238
+mtVer+I+R2       -10927.235   21950.471 - 1.8e-247   21954.163 - 1.07e-246   22199.478 - 7.72e-241
+HIVw+R2          -10939.271   21972.542 - 2.9e-252   21976.081 - 1.87e-251   22216.362 - 1.66e-244
+mtMAM+I+R2       -10946.285   21988.569 - 9.61e-256   21992.261 - 5.72e-255   22237.577 - 4.12e-249
+mtVer+R2         -10958.201   22010.402 - 1.74e-260   22013.941 - 1.12e-259   22254.222 -   1e-252
+mtInv+I+R2       -10976.159   22048.319 - 1.02e-268   22052.011 - 6.07e-268   22297.326 - 4.37e-262
+mtMAM+R2         -10987.544   22069.088 - 3.15e-273   22072.627 - 2.02e-272   22312.908 - 1.81e-265
+mtInv+R2         -10993.385   22080.771 - 9.15e-276   22084.310 - 5.88e-275   22324.591 - 5.25e-268
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: Q.plant+I+R2
+
+State frequencies: (model)
+
+Model of rate heterogeneity: Invar+FreeRate with 2 categories
+Proportion of invariable sites: 0.0872
+Site proportion and rates:  (0.8043,0.5188) (0.1085,5.3698)
+
+ Category  Relative_rate  Proportion
+  0         0              0.0872
+  1         0.5188         0.8043
+  2         5.3698         0.1085
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -10373.7570 (s.e. 197.6075)
+Unconstrained log-likelihood (without tree): -8278.7212
+Number of free parameters (#branches + #model parameters): 48
+Akaike information criterion (AIC) score: 20843.5140
+Corrected Akaike information criterion (AICc) score: 20847.2063
+Bayesian information criterion (BIC) score: 21092.5216
+
+Total tree length (sum of branch lengths): 5.8785
+Sum of internal branch lengths: 5.5691 (94.7370% of tree length)
+
+WARNING: 2 near-zero internal branches (<0.0008) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'S.salar_sf3b3_splicing_factor_3B_subunit_3' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++--S.salar_sf3b3_splicing_factor_3B_subunit_3
+|
+|              +--S.townsendi_SF3B3_splicing_factor_3B_subunit_3
+|           +--| (66)
+|           |  |  +--G.gallus_SF3B3_splicing_factor_3B_subunit_3
+|           |  +--| (61)
+|           |     |  +--C.mydas_SF3B3_splicing_factor_3B_subunit_3
+|           |     +--| (67)
+|           |        |     +**E.caballus_SF3B3_splicing_factor_3B_subunit_3
+|           |        |  +**| (66)
+|           |        |  |  +**F.catus_SF3B3_splicing_factor_3B_subunit_3
+|           |        +--| (75)
+|           |           +--H.sapiens_SF3B3_splicing_factor_3B_subunit_3
+|        +--| (47)
+|        |  |  +--X.laevis_sf3b3.S_splicing_factor_3B_subunit_3
+|        |  +--| (100)
+|        |     +--X.laevis_sf3b3.L_splicing_factor_3B_subunit_3
+|     +**| (73)
+|     |  |                                                                  +--G.aculeatus_ddb1_DNA_damagebinding_protein_1
+|     |  |                                                               +--| (92)
+|     |  |                                                               |  |  +--S.salar_LOC106561926_DNA_damagebinding_protein_1_isoform_X1
+|     |  |                                                               |  +--| (98)
+|     |  |                                                               |     +--S.salar_ddb1_DNA_damagebinding_protein_1
+|     |  |                                                            +--| (94)
+|     |  |                                                            |  +--D.rerio_ddb1_DNA_damagebinding_protein_1
+|     |  |                                                         +--| (66)
+|     |  |                                                         |  |           +--S.townsendi_DDB1_DNA_damagebinding_protein_1
+|     |  |                                                         |  |        +--| (70)
+|     |  |                                                         |  |        |  +--C.mydas_DDB1_DNA_damagebinding_protein_1
+|     |  |                                                         |  |     +--| (97)
+|     |  |                                                         |  |     |  +--G.gallus_DDB1_DNA_damagebinding_protein_1
+|     |  |                                                         |  |  +--| (75)
+|     |  |                                                         |  |  |  |  +--E.caballus_DDB1_DNA_damagebinding_protein_1
+|     |  |                                                         |  |  |  +--| (91)
+|     |  |                                                         |  |  |     |  +**F.catus_DDB1_DNA_damagebinding_protein_1_isoform_X2
+|     |  |                                                         |  |  |     +--| (94)
+|     |  |                                                         |  |  |        +--H.sapiens_DDB1_DNA_damagebinding_protein_1
+|     |  |                                                         |  +--| (85)
+|     |  |                                                         |     +--X.laevis_ddb1.S_DNA_damagebinding_protein_1
+|     |  +---------------------------------------------------------| (100)
+|     |                                                            +--C.carcharias_ddb1_DNA_damagebinding_protein_1
+|  +--| (97)
+|  |  +--C.carcharias_sf3b3_splicing_factor_3B_subunit_3
++--| (54)
+|  +--D.rerio_sf3b3_splicing_factor_3B_subunit_3
+|
++--G.aculeatus_sf3b3_splicing_factor_3B_subunit_3
+
+Tree in newick format:
+
+(S.salar_sf3b3_splicing_factor_3B_subunit_3:0.0161643491,(((((S.townsendi_SF3B3_splicing_factor_3B_subunit_3:0.0042824146,(G.gallus_SF3B3_splicing_factor_3B_subunit_3:0.0038005709,(C.mydas_SF3B3_splicing_factor_3B_subunit_3:0.0095773232,((E.caballus_SF3B3_splicing_factor_3B_subunit_3:0.0000009963,F.catus_SF3B3_splicing_factor_3B_subunit_3:0.0000009963)66:0.0000009963,H.sapiens_SF3B3_splicing_factor_3B_subunit_3:0.0008387020)75:0.0015175944)67:0.0042929742)61:0.0032597335)66:0.0134365583,(X.laevis_sf3b3.S_splicing_factor_3B_subunit_3:0.0076428185,X.laevis_sf3b3.L_splicing_factor_3B_subunit_3:0.0101060222)100:0.0210754043)47:0.0192520729,((((G.aculeatus_ddb1_DNA_damagebinding_protein_1:0.0280188971,(S.salar_LOC106561926_DNA_damagebinding_protein_1_isoform_X1:0.0056719934,S.salar_ddb1_DNA_damagebinding_protein_1:0.0013096997)98:0.0096358403)92:0.0179045124,D.rerio_ddb1_DNA_damagebinding_protein_1:0.0133727760)94:0.0581809968,((((S.townsendi_DDB1_DNA_damagebinding_protein_1:0.0181178207,C.mydas_DDB1_DNA_damagebinding_protein_1:0.0060065637)70:0.0015954165,G.gallus_DDB1_DNA_damagebinding_protein_1:0.0123932679)97:0.0072227219,(E.caballus_DDB1_DNA_damagebinding_protein_1:0.0017442446,(F.catus_DDB1_DNA_damagebinding_protein_1_isoform_X2:0.0000009963,H.sapiens_DDB1_DNA_damagebinding_protein_1:0.0008553415)94:0.0008336380)91:0.0076594993)75:0.0060086070,X.laevis_ddb1.S_DNA_damagebinding_protein_1:0.0629682753)85:0.0187877687)66:0.0117245876,C.carcharias_ddb1_DNA_damagebinding_protein_1:0.0367827238)100:5.3239471110)73:0.0000019989,C.carcharias_sf3b3_splicing_factor_3B_subunit_3:0.0396256044)97:0.0367064949,D.rerio_sf3b3_splicing_factor_3B_subunit_3:0.0118944000)54:0.0060376194,G.aculeatus_sf3b3_splicing_factor_3B_subunit_3:0.0182086149);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -10373.847550
+Robinson-Foulds distance between ML tree and consensus tree: 2
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--S.salar_sf3b3_splicing_factor_3B_subunit_3
+|
+|              +--S.townsendi_SF3B3_splicing_factor_3B_subunit_3
+|           +--| (66)
+|           |  |  +--G.gallus_SF3B3_splicing_factor_3B_subunit_3
+|           |  +--| (61)
+|           |     |  +--C.mydas_SF3B3_splicing_factor_3B_subunit_3
+|           |     +--| (67)
+|           |        |     +--E.caballus_SF3B3_splicing_factor_3B_subunit_3
+|           |        |  +--| (66)
+|           |        |  |  +--F.catus_SF3B3_splicing_factor_3B_subunit_3
+|           |        +--| (75)
+|           |           +--H.sapiens_SF3B3_splicing_factor_3B_subunit_3
+|        +--| (50)
+|        |  |                                                                  +--G.aculeatus_ddb1_DNA_damagebinding_protein_1
+|        |  |                                                               +--| (92)
+|        |  |                                                               |  |  +--S.salar_LOC106561926_DNA_damagebinding_protein_1_isoform_X1
+|        |  |                                                               |  +--| (98)
+|        |  |                                                               |     +--S.salar_ddb1_DNA_damagebinding_protein_1
+|        |  |                                                            +--| (94)
+|        |  |                                                            |  +--D.rerio_ddb1_DNA_damagebinding_protein_1
+|        |  |                                                         +--| (66)
+|        |  |                                                         |  |           +--S.townsendi_DDB1_DNA_damagebinding_protein_1
+|        |  |                                                         |  |        +--| (70)
+|        |  |                                                         |  |        |  +--C.mydas_DDB1_DNA_damagebinding_protein_1
+|        |  |                                                         |  |     +--| (97)
+|        |  |                                                         |  |     |  +--G.gallus_DDB1_DNA_damagebinding_protein_1
+|        |  |                                                         |  |  +--| (75)
+|        |  |                                                         |  |  |  |  +--E.caballus_DDB1_DNA_damagebinding_protein_1
+|        |  |                                                         |  |  |  +--| (91)
+|        |  |                                                         |  |  |     |  +--F.catus_DDB1_DNA_damagebinding_protein_1_isoform_X2
+|        |  |                                                         |  |  |     +--| (94)
+|        |  |                                                         |  |  |        +--H.sapiens_DDB1_DNA_damagebinding_protein_1
+|        |  |                                                         |  +--| (85)
+|        |  |                                                         |     +--X.laevis_ddb1.S_DNA_damagebinding_protein_1
+|        |  +---------------------------------------------------------| (100)
+|        |                                                            +--C.carcharias_ddb1_DNA_damagebinding_protein_1
+|     +--| (73)
+|     |  |  +--X.laevis_sf3b3.S_splicing_factor_3B_subunit_3
+|     |  +--| (100)
+|     |     +--X.laevis_sf3b3.L_splicing_factor_3B_subunit_3
+|  +--| (97)
+|  |  +--C.carcharias_sf3b3_splicing_factor_3B_subunit_3
++--| (54)
+|  +--D.rerio_sf3b3_splicing_factor_3B_subunit_3
+|
++--G.aculeatus_sf3b3_splicing_factor_3B_subunit_3
+
+
+Consensus tree in newick format: 
+
+(S.salar_sf3b3_splicing_factor_3B_subunit_3:0.0161818597,(((((S.townsendi_SF3B3_splicing_factor_3B_subunit_3:0.0042884326,(G.gallus_SF3B3_splicing_factor_3B_subunit_3:0.0038046835,(C.mydas_SF3B3_splicing_factor_3B_subunit_3:0.0095889739,((E.caballus_SF3B3_splicing_factor_3B_subunit_3:0.0000024755,F.catus_SF3B3_splicing_factor_3B_subunit_3:0.0000024755)66:0.0000024755,H.sapiens_SF3B3_splicing_factor_3B_subunit_3:0.0008394609)75:0.0015180655)67:0.0042965944)61:0.0032620860)66:0.0095736795,((((G.aculeatus_ddb1_DNA_damagebinding_protein_1:0.0280280267,(S.salar_LOC106561926_DNA_damagebinding_protein_1_isoform_X1:0.0056735520,S.salar_ddb1_DNA_damagebinding_protein_1:0.0013101776)98:0.0096393400)92:0.0179120210,D.rerio_ddb1_DNA_damagebinding_protein_1:0.0133710733)94:0.0582112828,((((S.townsendi_DDB1_DNA_damagebinding_protein_1:0.0181156967,C.mydas_DDB1_DNA_damagebinding_protein_1:0.0060060956)70:0.0015948137,G.gallus_DDB1_DNA_damagebinding_protein_1:0.0123930686)97:0.0072198370,(E.caballus_DDB1_DNA_damagebinding_protein_1:0.0017438647,(F.catus_DDB1_DNA_damagebinding_protein_1_isoform_X2:0.0000024755,H.sapiens_DDB1_DNA_damagebinding_protein_1:0.0008546183)94:0.0008329511)91:0.0076585305)75:0.0060312661,X.laevis_ddb1.S_DNA_damagebinding_protein_1:0.0629436324)85:0.0187885113)66:0.0114033650,C.carcharias_ddb1_DNA_damagebinding_protein_1:0.0370728074)100:5.3237120510)50:0.0038996778,(X.laevis_sf3b3.S_splicing_factor_3B_subunit_3:0.0076396545,X.laevis_sf3b3.L_splicing_factor_3B_subunit_3:0.0101304607)100:0.0210302338)73:0.0193036279,C.carcharias_sf3b3_splicing_factor_3B_subunit_3:0.0397214617)97:0.0367081615,D.rerio_sf3b3_splicing_factor_3B_subunit_3:0.0119474117)54:0.0060092122,G.aculeatus_sf3b3_splicing_factor_3B_subunit_3:0.0182329340);
+
+ALISIM COMMAND
+--------------
+To simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis, you can use the following command:
+
+--alisim simulated_MSA -t /home/bio312-user/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.fas.treefile -m "Q.plant+I{0.0872211}+R2{0.804261,0.51884,0.108518,5.36978}" --length 1323
+
+To mimic the alignment used to produce this analysis, i.e. simulate an alignment of the same length as the original alignment, using the tree and model parameters estimated from this analysis *and* copying the same gap positions as the original alignment, you can use the following command:
+
+iqtree -s /home/bio312-user/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.fas --alisim mimicked_MSA
+
+To simulate any number of alignments in either of the two commandlines above, use the --num-alignments options, for example mimic 100 alignments you would use the command line:
+
+iqtree -s /home/bio312-user/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.fas --alisim mimicked_MSA --num-alignments 100
+
+For more information on using AliSim, please visit: www.iqtree.org/doc/AliSim
+
+TIME STAMP
+----------
+
+Date and time: Thu Sep 26 16:15:56 2024
+Total CPU time used: 159.35126 seconds (0h:2m:39s)
+Total wall-clock time used: 82.02198991 seconds (0h:1m:22s)
+
