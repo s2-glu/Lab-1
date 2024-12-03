@@ -10,7 +10,15 @@ Order:
 8. wc -l startingprotein.blastp.detail.filtered.out
 9. grep -o -E "^[A-Z].[a-z]+" startingprotein.blastp.detail.filtered.out | sort | uniq -c
 
-1. 
+1. Use a  startingproteinprotein from Homo sapiens (human) as the query sequence. It can be downloaded using the following command.
+2. Perform a blast search using the query protein.
+3. Look at the output in globins.blastp.typical.out using less
+4. Create a more detailed and easier-to-process output of the same analysis. The -outfmt flag specifies a particular output format that will be useful for our analysis. 
+5. Look at the output in startingprotein.blastp.detail.out using the less -S command.
+6. Use this command to avoid counting by hand.
+7. Use this command you to filter our output file to satisfy this requirement.
+8. Use wc command to count the total number of hits in the BLAST results after the filter.
+9. Use grep to know how may paralogs are found in each species.
 # Lab-4
 Order:
 1. seqkit grep --pattern-file ~/lab03-s2-glu/startingprotein/startingprotein.blastp.detail.filtered.out ~/lab03-s2-glu/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-s2-glu/startingprotein/startingprotein.homologs.fas
