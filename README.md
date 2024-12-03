@@ -52,6 +52,7 @@ Order:
 8. nw_order -c n ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile | nw_display - nw_order -c n ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile | nw_display -w 1000 -b 'opacity:0' -s > ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile.svg -
 9. convert ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile.svg ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile.pdf
 10. nw_order -c n ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile | nw_topology - | nw_display -s -w 1000 > ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.midCl.treefile.svg -
+    
 Explanation:
 1. Create a directory in lab 5 for the startingprotein tree.
 2. Go to that directory.
@@ -74,6 +75,7 @@ Order:
 7. python2.7 ~/tools/recPhyloXML/python/NOTUNGtoRecPhyloXML.py -g ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile.rec.ntg --include.species
 8. thirdkind -Iie -D 40 -f ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile.rec.ntg.xml -o ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile.rec.svg
 9. convert -density 150 ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile.rec.svg ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile.rec.pdf
+
 Explanation:
 1. Create a new folder in lab06 for startingprotein.
 2. Changing the name mygenefamily to match startingprotein. Then, make a copy of this gene tree from lab 5 startingprotein folder into your lab 6 startingprotein folder.
@@ -96,6 +98,7 @@ Order:
 8. cut -f 6 ~/lab08-s2-glu/startingprotein/startingprotein.rps-blast.out | sort | uniq -c
 9. awk '{a=$4-$3;print $1,'\t',a;}' ~/lab08-s2-glu/startingprotein/startingprotein.rps-blast.out | sort -k2nr
 10. cut -f 1,5 -d $'\t' ~/lab08-s2-glu/startingprotein/startingprotein.rps-blast.out
+
 Explanation:
 1. First, make a directory for the startingprotein sequences, and change into that directory.
 2. Make a copy of our raw unaligned sequence, removing the asterisk (stop codon) in the process. To do this,use sed's substitute command to substitute any instance of an asterisk with nothing. Direct the ouput to startingprteoin folder in lab8.
