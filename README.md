@@ -106,4 +106,3 @@ Order:
 8. Command to see what Pfam domain annotation is most commonly found.
 9. Command to see which protein has the longest annotated protein domain.
 10. Command to pull out just the e-values to see which protein has a domain annotation with the best e-value.
-
