@@ -30,6 +30,7 @@ Order:
 6. alignbuddy -dinv 'ambig' ~/lab04-s2-glu/startingprotein/startingprotein.homologs.al.fas | alignbuddy -al
 7. t_coffee -other_pg seq_reformat -in ~/lab04-s2-glu/startingprotein/startingprotein.homologs.al.fas -output sim
 8. alignbuddy -pi ~/lab04-s2-glu/startingprotein/startingprotein.homologs.al.fas | awk ' (NR>2) { for (i=2;i<=NF ;i++){ sum+=$i;num++} } END{ print(100*sum/num) } '
+
 Explanation:
 1. Can grab the sequences we want (their names are in globins.blastp.detail.filtered.out) from allprotein.fas using seqkit. This is the seqkit command to obtain the sequences that are in the BLAST output file.
 2. We want to align all of the sequences with each other along their entire length. The resulting alignment will be a hypothesis about which positions are homologous to each other among the globin proteins, and which positions contain insertions or deletions, with respect to the other sequences. Use command to make a multiple sequence alignment using muscle.
