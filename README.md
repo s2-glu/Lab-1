@@ -10,6 +10,7 @@ Order:
 8. wc -l startingprotein.blastp.detail.filtered.out
 9. grep -o -E "^[A-Z].[a-z]+" startingprotein.blastp.detail.filtered.out | sort | uniq -c
 
+1. 
 # Lab-4
 Order:
 1. seqkit grep --pattern-file ~/lab03-s2-glu/startingprotein/startingprotein.blastp.detail.filtered.out ~/lab03-s2-glu/allprotein.fas | seqkit grep -v -p "carpio" > ~/lab04-s2-glu/startingprotein/startingprotein.homologs.fas
@@ -21,6 +22,15 @@ Order:
 7. t_coffee -other_pg seq_reformat -in ~/lab04-s2-glu/startingprotein/startingprotein.homologs.al.fas -output sim
 8. alignbuddy -pi ~/lab04-s2-glu/startingprotein/startingprotein.homologs.al.fas | awk ' (NR>2) { for (i=2;i<=NF ;i++){ sum+=$i;num++} } END{ print(100*sum/num) } '
 
+1. Can grab the sequences we want (their names are in globins.blastp.detail.filtered.out) from allprotein.fas using seqkit. This is the seqkit command to obtain the sequences that are in the BLAST output file.
+2. We want to align all of the sequences with each other along their entire length. The resulting alignment will be a hypothesis about which positions are homologous to each other among the globin proteins, and which positions contain insertions or deletions, with respect to the other sequences. Use command to make a multiple sequence alignment using muscle.
+3. Use the R package msa and a script that we have provided for you to print your alignment to a large pdf file that you can inspect with ease. Run this Rscript for printing the alignment.
+4. Calculate the width (length) of the alignment.
+5. Calculate the length of the alignment after removing any column with gaps.
+6. Calculate the length of the alignment after removing invariant (completely conserved) positions.
+7. Calculate the average percent identity using t_coffee.
+8. Repeat calculating the average percent identity using alignbuddy.
+   
 # Lab-5
 Order:
 1. mkdir ~/lab05-s2-glu/startingprotein
@@ -34,9 +44,19 @@ Order:
 9. convert ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile.svg ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile.pdf
 10. nw_order -c n ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile | nw_topology - | nw_display -s -w 1000 > ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.midCl.treefile.svg -
 
+1. Create a directory in lab 5 for the startingprotein tree.
+2. Go to that directory.
+3. Run the following command, which will both remove any sequence that contains a duplicate label tag, and put a copy in the lab05 directory.
+4. Use IQ-TREE to find the maximum likehood tree estimate. First, it will calculate the optimal amino acid substitution model and amino acid frequencies. Then, it will perform a tree search, estimating branch lengths as it goes.
+5. The .iqtree file includes an ASCII graphics (text graphics) version of the tree. It can also display it by reading the .treefile (which is newick formatted) into the nw_display program.
+6. look at it unrooted with a graphical display. nw_display can't do this, use our R script instead. Because there are so many genes,  the size of the text labels is smaller (0.4), and set the label lengths to 15.
+7. Use the software gotree to reroot the tree by using a type of rooting called midpoint.
+8. Look at the rooted tree at the command line, but making it graphic instead.
+9. Convert this svg image to a pdf.
+10. The tree shown by default in nw_display (and most other programs) is a phylogram. This means that the lengths of each branch are proportional to the number of substitutions that have accumulated in the sequence along that branch. This command witching the view to a cladogram
 # Lab-6
 Order:
-1. mkdir ~/lab06-$MYGIT/mygenefamily
+1. mkdir ~/lab06-s2-glu/startingprotein
 2. cp ~/lab05-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.al.mid.treefile
 3. java -jar ~/tools/Notung-3.0_24-beta/Notung-3.0_24-beta.jar -s ~/lab05-s2-glu/species.tre -g ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile --reconcile --speciestag prefix --savepng --events --outputdir ~/lab06-s2-glu/startingprotein/
 4. nw_display ~/lab05-s2-glu/species.tre
@@ -46,6 +66,15 @@ Order:
 8. thirdkind -Iie -D 40 -f ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile.rec.ntg.xml -o ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile.rec.svg
 9. convert -density 150 ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile.rec.svg ~/lab06-s2-glu/startingprotein/startingprotein.homologsf.pruned.treefile.rec.pdf
 
+1. Create a new folder in lab06 for startingprotein.
+2. Changing the name mygenefamily to match startingprotein. Then, make a copy of this gene tree from lab 5 startingprotein folder into your lab 6 startingprotein folder.
+3. Command to perform the reconciliation.
+4. Note the provided names for internal lineges.
+5. See the node names that notung used/assigned to these internal nodes with this command.
+6. Prune the tree to see important lineages.
+7. Generate a RecPhyloXML object by running the python script.
+8. Use software that allows us to view the gene tree reconciliation within the species tree.
+9. Convert this to a pdf.
 # Lab-8
 Order:
 1. mkdir ~/lab08-s2-glu/startingprotein && cd ~/lab08-s2-glu/startingprotein
