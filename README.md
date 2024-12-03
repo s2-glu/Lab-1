@@ -9,6 +9,7 @@ Order:
 7. awk '{if ($6< 1e-30)print $1 }' startingprotein.blastp.detail.out > startingprotein.blastp.detail.filtered.out
 8. wc -l startingprotein.blastp.detail.filtered.out
 9. grep -o -E "^[A-Z].[a-z]+" startingprotein.blastp.detail.filtered.out | sort | uniq -c
+   
 Explanation: 
 1. Use a  startingproteinprotein from Homo sapiens (human) as the query sequence. It can be downloaded using the following command.
 2. Perform a blast search using the query protein.
